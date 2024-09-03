@@ -21,7 +21,9 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(
   cors({
     methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
-    origin: process.env.DEVLOPMENT_FRONTEND_URL,
+    // origin: process.env.DEVLOPMENT_FRONTEND_URL,
+    // origin: "https://kanakku-frontend.netlify.app",
+    origin: "*",
   })
 );
 
